@@ -1,0 +1,80 @@
+pycairo
+------------------------------------------
+Python bindings for libcairo.
+
+Runtime requirements:
+  cygwin-1.5.21-2
+  libcairo2-1.2.4-1
+  python-2.4.3-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
+  automake1.9-1.9.6-1
+  binutils-20060817-1
+  cygport-0.2.6-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
+  pkg-config-0.20-1
+  sed-4.1.5-1
+
+Canonical website:
+  http://www.cairographics.org/
+
+Canonical download:
+  http://www.cairographics.org/releases/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pycairo-1.2.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pycairo-1.2.2-X.cygport all
+
+This will create:
+  /usr/src/pycairo-1.2.2-X-src.tar.bz2
+  /usr/src/pycairo-1.2.2-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/include/pycairo/pycairo.h
+  /usr/lib/pkgconfig/pycairo.pc
+  /usr/lib/python2.4/site-packages/cairo/__init__.py
+  /usr/lib/python2.4/site-packages/cairo/__init__.pyc
+  /usr/lib/python2.4/site-packages/cairo/__init__.pyo
+  /usr/lib/python2.4/site-packages/cairo/_cairo.dll
+  /usr/lib/python2.4/site-packages/cairo/_cairo.la
+  /usr/share/doc/Cygwin/pycairo-1.2.2.README
+  /usr/share/doc/pycairo-1.2.2/AUTHORS
+  /usr/share/doc/pycairo-1.2.2/COPYING
+  /usr/share/doc/pycairo-1.2.2/COPYING-LGPL-2.1
+  /usr/share/doc/pycairo-1.2.2/COPYING-MPL-1.1
+  /usr/share/doc/pycairo-1.2.2/ChangeLog
+  /usr/share/doc/pycairo-1.2.2/INSTALL
+  /usr/share/doc/pycairo-1.2.2/NEWS
+  /usr/share/doc/pycairo-1.2.2/NOTES
+  /usr/share/doc/pycairo-1.2.2/README
+
+------------------
+
+Port Notes:
+
+----- version 1.2.2-1 -----
+Version bump for cairo-1.2.
+
+----- version 1.0.2-1 -----
+Version bump.
+
+----- version 1.0.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
