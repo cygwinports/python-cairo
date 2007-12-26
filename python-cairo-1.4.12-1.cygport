@@ -1,0 +1,7 @@
+inherit pygtk
+
+DESCRIPTION="Python libcairo bindings"
+HOMEPAGE="http://cairographics.org/pycairo"
+SRC_URI="http://cairographics.org/releases/${ORIG_PN}-${PV}.tar.gz"
+
+DOCS="COPYING-LGPL-2.1 COPYING-MPL-1.1"
