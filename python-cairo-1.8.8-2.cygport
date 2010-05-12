@@ -5,7 +5,6 @@ HOMEPAGE="http://cairographics.org/pycairo"
 SRC_URI="http://cairographics.org/releases/${ORIG_PN}-${PV}.tar.gz"
 PATCH_URI="
 	1.8.6-libtool22.patch
-	1.8.6-python2.5.patch
 	1.8.8-compile-win32-25203.patch
 "
 
