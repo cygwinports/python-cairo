@@ -1,0 +1,10 @@
+inherit pygtk
+
+DESCRIPTION="Python libcairo bindings"
+HOMEPAGE="http://cairographics.org/pycairo"
+SRC_URI="http://cairographics.org/releases/py2cairo-${PV}.tar.bz2"
+SRC_DIR="py2cairo-${PV}"
+
+DISTCLEANFILES="config.log config.lt config.status libtool *.pc"
+
+DOCS="COPYING-LGPL-2.1 COPYING-MPL-1.1"
