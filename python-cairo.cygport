@@ -1,6 +1,11 @@
 inherit pygtk
 
-DESCRIPTION="Python libcairo bindings"
+NAME="python-cairo"
+VERSION=1.10.0
+RELEASE=2
+CATEGORY="Python"
+SUMMARY="Python bindings to libcairo"
+DESCRIPTION="Python bindings to libcairo"
 HOMEPAGE="http://cairographics.org/pycairo"
 SRC_URI="http://cairographics.org/releases/py2cairo-${PV}.tar.bz2"
 SRC_DIR="py2cairo-${PV}"
