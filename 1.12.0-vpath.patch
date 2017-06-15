@@ -1,0 +1,11 @@
+--- origsrc/pycairo-1.12.0/setup.py	2017-04-18 03:58:57.000000000 -0500
++++ src/pycairo-1.12.0/setup.py	2017-06-14 21:28:19.647881500 -0500
+@@ -175,7 +175,7 @@ class build_ext(du_build_ext):
+             ext.libraries += pkg_config_parse('--libs-only-l', 'xpyb')
+ 
+         script_dir = os.path.dirname(os.path.realpath(__file__))
+-        target = os.path.join(script_dir, "cairo", "config.h")
++        target = os.path.join("cairo", "config.h")
+         write_config_file(target, PYCAIRO_VERSION)
+ 
+         du_build_ext.run(self)
