@@ -1,7 +1,7 @@
 inherit python-wheel
 
 NAME="python-cairo"
-VERSION=1.12.0
+VERSION=1.14.1
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python bindings to libcairo"
@@ -11,12 +11,9 @@ SRC_URI="https://github.com/pygobject/pycairo/releases/download/v${VERSION}/pyca
 SRC_DIR="pycairo-${VERSION}"
 PATCH_URI="1.12.0-vpath.patch"
 
-PKG_NAMES+=" python2-cairo-devel python3-cairo-devel"
-python2_cairo_devel_OBSOLETES="python-cairo-devel"
-python2_cairo_devel_REQUIRES="python2-cairo python2-devel"
-python2_cairo_devel_CONTENTS="usr/include/pycairo/pycairo.h usr/lib/pkgconfig/pycairo.pc"
-python3_cairo_devel_REQUIRES="python3-cairo python3-devel"
-python3_cairo_devel_CONTENTS="usr/include/pycairo/py3cairo.h usr/lib/pkgconfig/py3cairo.pc"
+PKG_NAMES+=" python-cairo-devel"
+python_cairo_devel_OBSOLETES="python2-cairo-devel python3-cairo-devel"
+python_cairo_devel_CONTENTS="usr/include/pycairo/ usr/lib/pkgconfig/py*cairo.pc"
 python_cairo_debuginfo_OBSOLETES="python3-cairo-debuginfo"
 PKG_IGNORE="usr/share/doc/*-devel/"
 
